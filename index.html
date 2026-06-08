@@ -1,76 +1,24 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Flashcards de Mitos e Verdades</title> 
-  </head> 
-  <body> 
-    <header> 
-    </header> 
- 
-    <main> 
-    </main> 
- 
-    <footer> 
-    </footer> 
-  </body> 
-</html> 
-ol {
-    padding: 40px;
-    }<button class="botao-ajuda">Fechar</button>
-    .modal-fundo {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        }
-        <script src="script.js"></script>
-        let btnAjuda = document.querySelector(".botao-ajuda");
-let btnFechar = document.querySelector(".botao-ajuda");
-let modal = document.querySelector(".botao-ajuda");
-<button class="botao-ajuda botao-fechar">Fechar</button>
-let btnAjuda = document.querySelector(".botao-ajuda");
-let btnFechar = document.querySelector(".botao-ajuda");
-let modal = document.querySelector(".modal-fundo");
-btnAjuda.addEventListener("click", abreModal);
-btnFechar.addEventListener("click", fechaModal);
-function abreModal() {
-    modal.style.display = "block";
-    }
-    
-    function fechaModal() {
-    modal.style.display = "none";
-    }
-    Crie um menu de acessibilidade simples em HTML e CSS com um botão para aumentar e diminuir a fonte e leitura em voz alta. Continue mantendo todas as classes e IDs no idioma português-Brasil.
-<!-- MENU DE ACESSIBILIDADE -->
-<nav class="barra-acessibilidade" aria-label="Controles de Acessibilidade">
-    <button class="botao-controle" onclick="alterarFonte(2)" title="Aumentar texto">A+ Aumentar</button>
-    <button class="botao-controle" onclick="alterarFonte(-2)" title="Diminuir texto">A- Diminuir</button>
-    <button class="botao-controle botao-leitura" onclick="lerTexto()" id="btn-voz">�� Ouvir Página</button>
-    <button class="botao-controle" onclick="pararLeitura()">⏹️ Parar</button>
-</nav>
-<button class="botao-controle" onclick="pararLeitura()">Parar</button>
-<nav class="barra-acessibilidade" aria-label="Controles de Acessibilidade">
-    <button class="botao-controle" title="Aumentar texto">A+ Aumentar</button>
-    <button class="botao-controle" title="Diminuir texto">A- Diminuir</button>
-    <button class="botao-controle botao-leitura" id="btn-voz">Ouvir Página</button>
-    </nav>
-    <button id="btnAumentaTexto" class="botao-controle" title="Aumentar texto">A+ Aumentar</button>
-<button id="btnDiminuiTexto" class="botao-controle" title="Diminuir texto">A- Diminuir</button>
-let btnAumentaFonte = document.getElementById("btnAumentaTexto");
-let btnDiminuiFonte = document.getElementById("btnDiminuiTexto");
-btnAumentaFonte.addEventListener("click", aumentaFonte);
-btnDiminuiFonte.addEventListener("click", diminuiFonte);
-function aumentaFonte() {
-    tamanhoFonteAtual = tamanhoFonteAtual + valorAdicionado;
-    document.documentElement.style.fontSize = `${tamanhoFonteAtual}px`;
-}function diminuiFonte() {
-    tamanhoFonteAtual = tamanhoFonteAtual - valorSubtraido;
-    document.documentElement.style.fontSize = `${tamanhoFonteAtual}px`;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agrinho 2026 - Agro Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <h1>🌱 Agrinho 2026 🌱</h1>
+    <h2>Agro Forte, Futuro Sustentável</h2>
+
+    <div id="info">
+        <p>Pontos: <span id="score">0</span></p>
+    </div>
+
+    <div id="game">
+        <div id="player">🚜</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
